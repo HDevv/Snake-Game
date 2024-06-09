@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<!-- Dans un navigateur réalisez un jeu de Snake dans un Canvas
+Règle 1 : le corps suit la tête
+Règle 2 : si on mange un fruit le corps grandi de 1 on marque dix points
+Règle 3 : si la tête mange le corps c’est perdu
+Règle 4 : le plateau est un donut (le haut communique avec le bas, la gauche avec la droite)
+Lorsque la partie est terminée Vous affichez le tableau des 20 plus grands scores
+Si le joueur entre dans le top 20 vous lui proposez un formulaire contrôlé demandant son pseudo (minimum 6 caractères, maximum 20)
+Si le tableau est vide vous l’initialiserez à partir des données fournies par une API
+Le tableau des meilleurs scores sera conservé dans le stockage local
+L’architecture de votre code devra être modulaire, vous devrez utiliser les concepts de la POO.
+Votre code doit être clair et compréhensible
+Aucun Framework JS autorisé. Bootstrap, Tailwind ou Sass autorisés -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>Snake</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="./snakee.css">
+    <link rel="icon" type="image/png" href="assets/serpent.png">
+
+</head>
+
+<body>
+    <div id="scoreBoard"></div>
+    <canvas id="snakeGame" width="400" height="400"></canvas>
+    <div id="leaderboard" class="text-center mt-4">
+        <h2 class="top-text">Top 20</h2>
+        <ol id="topScoresList"></ol>
+    </div>
+    <script src="snakee.js"></script>
+</body>
+
+</html>
